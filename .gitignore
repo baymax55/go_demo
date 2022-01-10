@@ -2,3 +2,4 @@
 *.exe
 ./src/github.com
 *.a
+pkg
