@@ -11,6 +11,10 @@ type person struct {
 }
 
 func main() {
+	QueryRow()
+}
+
+func Query() {
 	conn := InitDB()
 	defer conn.Close()
 	// Query 返回的是Rows
@@ -26,4 +30,16 @@ func main() {
 		persons = append(persons, a)
 	}
 	fmt.Println(persons)
+}
+
+func QueryRow() {
+	conn := InitDB()
+	defer conn.Close()
+	row := conn.QueryRow("select * from test where id = ?", 1)
+	var u person
+	err := row.Scan(&u.id, &u.name, &u.age)
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+	fmt.Println(u)
 }
