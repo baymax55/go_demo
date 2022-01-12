@@ -14,11 +14,11 @@ type ListNode struct {
 }
 
 func main() {
-	l1_1 := ListNode{Val: 1}
+	l1_1 := ListNode{Val: 9}
 	l2_1 := ListNode{Val: 1}
 
-	l1 := ListNode{1, &l1_1}
-	l2 := ListNode{2, &l2_1}
+	l1 := ListNode{9, &l1_1}
+	l2 := ListNode{1, &l2_1}
 	l := addTwoNumbers(&l1, &l2)
 	p(l)
 }
