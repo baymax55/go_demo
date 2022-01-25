@@ -12,6 +12,10 @@ func main() {
 	intArr := threeSum(arr)
 
 	fmt.Printf("%v", intArr)
+	println()
+	fmt.Printf("%+v", intArr)
+	println()
+	fmt.Printf("%#v", intArr)
 }
 
 // 解法一 最优解，双指针 + 排序
