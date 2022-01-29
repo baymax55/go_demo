@@ -2,27 +2,27 @@ package main
 
 /**
  * Definition for singly-linked list.
- * type ListNode struct {
+ * type listNode struct {
  *     Val int
- *     Next *ListNode
+ *     Next *listNode
  * }
  */
 
-type ListNode struct {
+type listNode struct {
 	Val  int
-	Next *ListNode
+	Next *listNode
 }
 
 func main() {
-	l1_1 := ListNode{Val: 9}
-	l2_1 := ListNode{Val: 1}
+	l1_1 := listNode{Val: 9}
+	l2_1 := listNode{Val: 1}
 
-	l1 := ListNode{9, &l1_1}
-	l2 := ListNode{1, &l2_1}
+	l1 := listNode{9, &l1_1}
+	l2 := listNode{1, &l2_1}
 	l := addTwoNumbers(&l1, &l2)
 	p(l)
 }
-func p(l *ListNode) {
+func p(l *listNode) {
 	inner := l.Next
 	val := l.Val
 	println(val)
@@ -31,8 +31,8 @@ func p(l *ListNode) {
 	}
 	p(inner)
 }
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	head := &ListNode{Val: 0}
+func addTwoNumbers(l1 *listNode, l2 *listNode) *listNode {
+	head := &listNode{Val: 0}
 	n1, n2, carry, current := 0, 0, 0, head
 	for l1 != nil || l2 != nil || carry != 0 {
 		if l1 == nil {
@@ -47,7 +47,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			n2 = l2.Val
 			l2 = l2.Next
 		}
-		current.Next = &ListNode{Val: (n1 + n2 + carry) % 10}
+		current.Next = &listNode{Val: (n1 + n2 + carry) % 10}
 		current = current.Next
 		carry = (n1 + n2 + carry) / 10
 	}
