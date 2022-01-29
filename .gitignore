@@ -3,3 +3,4 @@
 ./src/github.com
 *.a
 pkg
+github.com
