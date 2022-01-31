@@ -1,17 +1,17 @@
-package main
+package leetcode
 
 import (
 	structures "leet_code/self_pkg"
 )
 
-func pl(l *ListNode) {
+func PL(l *ListNode) {
 	inner := l.Next
 	val := l.Val
 	print(val, " ")
 	if inner == nil {
 		return
 	}
-	pl(inner)
+	PL(inner)
 }
 func main() {
 
@@ -19,10 +19,10 @@ func main() {
 	l2 := ListNode{2, &l1}
 	l3 := ListNode{3, &l2}
 	l4 := ListNode{4, &l3}
-	pl(&l4)
+	PL(&l4)
 	println()
 	res := removeNthFromEnd(&l4, 1)
-	pl(res)
+	PL(res)
 }
 
 // ListNode define
