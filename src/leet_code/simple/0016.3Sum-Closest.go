@@ -5,13 +5,14 @@ import (
 	"sort"
 )
 
-func main() {
-
-	intArr := []int{-1, 2, 1, -4}
-	target := 1
-	i := threeSumClosest1(intArr, target)
-	println(i)
-}
+//
+//func main() {
+//
+//	intArr := []int{-1, 2, 1, -4}
+//	target := 1
+//	i := threeSumClosest1(intArr, target)
+//	println(i)
+//}
 
 // 解法一 O(n^2)
 func threeSumClosest(nums []int, target int) int {

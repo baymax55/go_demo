@@ -1,16 +1,15 @@
 package leetcode
 
 import (
-	"fmt"
 	"sort"
 )
 
-func main() {
-	intArr := []int{1, 0, -1, 0, -2, 2}
-	i := 0
-	res := fourSum(intArr, i)
-	fmt.Printf("%v", res)
-}
+//func main() {
+//	intArr := []int{1, 0, -1, 0, -2, 2}
+//	i := 0
+//	res := fourSum(intArr, i)
+//	fmt.Printf("%v", res)
+//}
 
 // 解法一 双指针
 func fourSum(nums []int, target int) (quadruplets [][]int) {

@@ -1,11 +1,11 @@
 package leetcode
 
-func main() {
-	//str := []string{"aflower", "sflow", "dflight"}
-	str := []string{"flower", "flow", "flight"}
-
-	println(longestCommonPrefix(str))
-}
+//func main() {
+//	//str := []string{"aflower", "sflow", "dflight"}
+//	str := []string{"flower", "flow", "flight"}
+//
+//	println(longestCommonPrefix(str))
+//}
 
 func longestCommonPrefix(strs []string) string {
 	prefix := strs[0]

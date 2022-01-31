@@ -1,12 +1,10 @@
 package leetcode
 
-import "fmt"
-
-func main() {
-
-	arr := letterCombinations("23")
-	fmt.Printf("%v", arr)
-}
+//func main() {
+//
+//	arr := letterCombinations("23")
+//	fmt.Printf("%v", arr)
+//}
 
 var (
 	letterMap = []string{

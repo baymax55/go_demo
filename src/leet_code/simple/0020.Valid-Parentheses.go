@@ -1,10 +1,11 @@
 package leetcode
 
-func main() {
-
-	s := "{[]}"
-	println(isValid(s))
-}
+//
+//func main() {
+//
+//	s := "{[]}"
+//	println(isValid(s))
+//}
 func isValid(s string) bool {
 	// 空字符串直接返回 true
 	if len(s) == 0 {

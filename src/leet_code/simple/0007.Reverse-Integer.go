@@ -1,9 +1,9 @@
 package leetcode
 
-func main() {
-	i := -123
-	println(reverse7(i))
-}
+//func main() {
+//	i := -123
+//	println(reverse7(i))
+//}
 func reverse7(x int) int {
 	tmp := 0
 	for x != 0 {

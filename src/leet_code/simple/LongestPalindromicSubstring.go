@@ -1,10 +1,10 @@
 package leetcode
 
-func main() {
-
-	s := "aabbaa"
-	println(longestPalindrome(s))
-}
+//func main() {
+//
+//	s := "aabbaa"
+//	println(longestPalindrome(s))
+//}
 
 // 解法一 Manacher's algorithm，时间复杂度 O(n)，空间复杂度 O(n)
 func longestPalindrome(s string) string {

@@ -13,15 +13,15 @@ type listNode struct {
 	Next *listNode
 }
 
-func main() {
-	l1_1 := listNode{Val: 9}
-	l2_1 := listNode{Val: 1}
-
-	l1 := listNode{9, &l1_1}
-	l2 := listNode{1, &l2_1}
-	l := addTwoNumbers(&l1, &l2)
-	p(l)
-}
+//func main() {
+//	l1_1 := listNode{Val: 9}
+//	l2_1 := listNode{Val: 1}
+//
+//	l1 := listNode{9, &l1_1}
+//	l2 := listNode{1, &l2_1}
+//	l := addTwoNumbers(&l1, &l2)
+//	p(l)
+//}
 func p(l *listNode) {
 	inner := l.Next
 	val := l.Val

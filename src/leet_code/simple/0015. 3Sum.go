@@ -1,22 +1,21 @@
 package leetcode
 
 import (
-	"fmt"
 	"sort"
 )
 
-func main() {
-
-	arr := []int{-1, 0, 1, 2, -1, -4}
-
-	intArr := threeSum(arr)
-
-	fmt.Printf("%v", intArr)
-	println()
-	fmt.Printf("%+v", intArr)
-	println()
-	fmt.Printf("%#v", intArr)
-}
+//func main() {
+//
+//	arr := []int{-1, 0, 1, 2, -1, -4}
+//
+//	intArr := threeSum(arr)
+//
+//	fmt.Printf("%v", intArr)
+//	println()
+//	fmt.Printf("%+v", intArr)
+//	println()
+//	fmt.Printf("%#v", intArr)
+//}
 
 // 解法一 最优解，双指针 + 排序
 func threeSum(nums []int) [][]int {

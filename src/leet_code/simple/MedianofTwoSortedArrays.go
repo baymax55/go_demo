@@ -1,14 +1,12 @@
 package leetcode
 
-import "fmt"
-
-func main() {
-
-	num1 := []int{1, 3}
-	num2 := []int{2, 4}
-	mid := findMedianSortedArrays(num1, num2)
-	fmt.Printf("%f", mid)
-}
+//func main() {
+//
+//	num1 := []int{1, 3}
+//	num2 := []int{2, 4}
+//	mid := findMedianSortedArrays(num1, num2)
+//	fmt.Printf("%f", mid)
+//}
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	// 假设 nums1 的长度小

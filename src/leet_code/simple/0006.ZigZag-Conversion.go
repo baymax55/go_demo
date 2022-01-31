@@ -1,10 +1,10 @@
 package leetcode
 
-func main() {
-	str := "PAYPALISHIRING"
-	num := 4
-	println(convert(str, num))
-}
+//func main() {
+//	str := "PAYPALISHIRING"
+//	num := 4
+//	println(convert(str, num))
+//}
 func convert(s string, numRows int) string {
 	matrix, down, up := make([][]byte, numRows, numRows), 0, numRows-2
 	for i := 0; i != len(s); {

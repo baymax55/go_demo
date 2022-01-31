@@ -13,17 +13,18 @@ func PL(l *ListNode) {
 	}
 	PL(inner)
 }
-func main() {
 
-	l1 := ListNode{Val: 1}
-	l2 := ListNode{2, &l1}
-	l3 := ListNode{3, &l2}
-	l4 := ListNode{4, &l3}
-	PL(&l4)
-	println()
-	res := removeNthFromEnd(&l4, 1)
-	PL(res)
-}
+//func main() {
+//
+//	l1 := ListNode{Val: 1}
+//	l2 := ListNode{2, &l1}
+//	l3 := ListNode{3, &l2}
+//	l4 := ListNode{4, &l3}
+//	PL(&l4)
+//	println()
+//	res := removeNthFromEnd(&l4, 1)
+//	PL(res)
+//}
 
 // ListNode define
 type ListNode = structures.ListNode

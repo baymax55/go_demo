@@ -1,10 +1,8 @@
 package leetcode
 
-import "fmt"
-
-func main() {
-	fmt.Println(myAtoi("-00000123"))
-}
+//func main() {
+//	fmt.Println(myAtoi("-00000123"))
+//}
 
 func myAtoi(s string) int {
 	maxInt, signAllowed, whitespaceAllowed, sign, digits := int64(2<<30), true, true, 1, []int{}

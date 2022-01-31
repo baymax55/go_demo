@@ -2,10 +2,10 @@ package leetcode
 
 import "strconv"
 
-func main() {
-
-	println(isPalindrome(121))
-}
+//func main() {
+//
+//	println(isPalindrome(121))
+//}
 
 // 解法一
 func isPalindrome(x int) bool {

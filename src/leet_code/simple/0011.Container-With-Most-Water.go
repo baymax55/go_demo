@@ -1,13 +1,11 @@
 package leetcode
 
-import "fmt"
-
-func main() {
-
-	temp := []int{1, 2, 3}
-
-	fmt.Printf("%d", maxArea(temp))
-}
+//func main() {
+//
+//	temp := []int{1, 2, 3}
+//
+//	fmt.Printf("%d", maxArea(temp))
+//}
 
 func maxArea(height []int) int {
 	max, start, end := 0, 0, len(height)-1
